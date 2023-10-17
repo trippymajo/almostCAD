@@ -25,7 +25,7 @@ public:
   void drawFigure(QPainter &painter, QPoint &startPoint, QPoint &endPoint) override;
 };
 
-class Line : public Figure
+class Triangle : public Figure
 {
 public:
   void drawFigure(QPainter &painter, QPoint &startPoint, QPoint &endPoint) override;
@@ -51,7 +51,7 @@ public:
       }
       case(3):
       {
-        return new class Line();
+        return new class Triangle();
         break;
       }
     }

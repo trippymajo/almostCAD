@@ -23,11 +23,11 @@ void MainWindow::createActions()
 {
   drawRect = new QAction(tr("Rectangle"));
   drawCircle = new QAction(tr("Circle"));
-  drawTriangle = new QAction(tr("Line"));
+  drawTriangle = new QAction(tr("Triangle"));
 
 connect(drawRect,&QAction::triggered, this, &MainWindow::changeToRect);
 connect(drawCircle,&QAction::triggered, this, &MainWindow::changeToCircle);
-connect(drawTriangle,&QAction::triggered, this, &MainWindow::changeToLine);
+connect(drawTriangle,&QAction::triggered, this, &MainWindow::changeToTriangle);
 }
 
 void MainWindow::createMenu()

@@ -31,7 +31,7 @@ private:
 private slots:
   void      changeToRect(){m_curFigure = 1;};
   void      changeToCircle(){m_curFigure = 2;};
-  void      changeToLine(){m_curFigure = 3;};
+  void      changeToTriangle(){m_curFigure = 3;};
 
 public:
   static int m_curFigure;
