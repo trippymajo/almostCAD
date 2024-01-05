@@ -7,7 +7,7 @@ Simple Qt qmake project some kind of paint.
 1. Triangle (FIXED!)
 
 ### TODO
-1. Port to cmake
+1. ~Port to cmake~ [DONE]
 1. ~Figure out how to draw triangle~ [DONE]
 1. File dialog
 1. Color, width.

@@ -1,0 +1,30 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1.0)
+
+#Find
+FIND_PACKAGE(Qt5 COMPONENTS Widgets REQUIRED)
+
+# Variables
+SET(CMAKE_CXX_STANDARD 14)
+SET(CMAKE_AUTOMOC ON)
+SET(CMAKE_AUTORCC ON)
+SET(SOURCES
+main.cpp
+mainwindow.cpp
+workarea.cpp
+figures.cpp
+)
+SET(HEADERS
+mainwindow.h
+workarea.h
+figures.h
+)
+
+if(CMAKE_VERSION VERSION_LESS "3.7.0")
+    set(CMAKE_INCLUDE_CURRENT_DIR ON)
+endif()
+
+#Exe
+ADD_EXECUTABLE(AlmostCAD ${SOURCES} ${HEADERS})
+
+#Link
+TARGET_LINK_LIBRARIES(AlmostCAD Qt5::Widgets)
