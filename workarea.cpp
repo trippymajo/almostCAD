@@ -69,7 +69,7 @@ void WorkArea::draw()
   QPainter painter(&image);
   painter.setPen(QPen(lineColor, lineWidth, Qt::SolidLine, Qt::RoundCap));
 
-  std::unique_ptr<MakeFigure> ptrMakeFigure {std::make_unique<MakeFigure>()};
+  auto ptrMakeFigure {std::make_unique<MakeFigure>()};
   ptrMakeFigure->BuildFigure(MainWindow::m_curFigure);
   ptrMakeFigure->getFigure()->drawFigure(painter, startPoint, endPoint);
 
