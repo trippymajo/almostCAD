@@ -1,5 +1,20 @@
 # almostCAD
-Simple Qt qmake project some kind of paint.
+Simple Qt qmake project some kind of paint. C++ 14.
+
+## Requirements
+- g++ 12.2.0+
+- cmake 3.1.0+
+- Qt 5.XX
+
+## Building
+Linux:
+```
+cd ../almostCAD
+mkdir BuilALL
+cd BuilALL
+cmake ../
+cmake --build
+```
 
 ### Figures:
 1. Rectangle
